@@ -20,10 +20,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="./dayForm.php">Add verb</a>
+                            <a class="nav-link" href="./addVerb.php">Add verb</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./allDays.php">See all verbs</a>
+                        <a class="nav-link" href="./allVerbs.php">See all verbs</a>
                     </li>
                 </ul>
             </div>
