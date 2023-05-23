@@ -5,7 +5,7 @@
             <h1 class="text-center">Add a verb</h1>
         </div>
         <div class="col-4 my-2">
-            <form method="POST">
+            <form method="POST" action="./action.php">
                 <div class="mb-3">
                     <label for="frenchVerb" class="form-label">Verb in french</label>
                     <input type="text" name="frenchVerb" class="form-control">
@@ -20,7 +20,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="pastParticiple" class="form-label">Past participle</label>
-                    <input type="text" name="pastParticiple" class="form-control">
+                    <input type="text" name="pastParticipate" class="form-control">
                 </div>
                 <button class="btn btn-primary">Submit</button>
             </form>
