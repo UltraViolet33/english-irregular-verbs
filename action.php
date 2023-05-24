@@ -21,8 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         "pastParticipate" => $_POST["pastParticipate"]
     ];
 
-    echo "ok";
-
     $fileHandler = new FileHandler();
     $fileHandler->writeVerb($verb);
+
+    header("location: index.php");
 }

@@ -1,3 +1,7 @@
+<?php
+require_once "./src/FileHandler.php";
+$fileHandler = new FileHandler();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
