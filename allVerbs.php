@@ -11,6 +11,7 @@ $allVerbs = $fileHandler->getData();
                     <th>Anglais</th>
                     <th>Prétérit</th>
                     <th>Participe passé</th>
+                    <th>Modifier</th>
                 </tr>
             </thead>
             <tbody>
@@ -20,6 +21,7 @@ $allVerbs = $fileHandler->getData();
                         <td><?= $verb["english"] ?></td>
                         <td><?= $verb["preterit"] ?></td>
                         <td><?= $verb["pastParticipate"] ?></td>
+                        <td><a href="">Modifier</a></td>
                     </tr>
                 <?php endforeach ?>
             </tbody>
