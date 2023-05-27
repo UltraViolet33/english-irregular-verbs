@@ -21,6 +21,7 @@
                 <div class="col-1">
                     <button class="btn btn-primary" id="submit">Valider</button>
                 </div>
+                <p id="result"></p>
             </div>
         </div>
     </div>
