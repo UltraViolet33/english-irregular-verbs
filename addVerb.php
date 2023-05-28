@@ -1,7 +1,7 @@
 <?php require_once './inc/header.php' ?>
 <div class="container my-2">
     <div class="row justify-content-center">
-        <div class="col-12">
+        <div class="col-12">    
             <h1 class="text-center">Add a verb</h1>
         </div>
         <div class="col-4 my-2">

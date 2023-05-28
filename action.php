@@ -16,9 +16,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $verb = [
         "french" => $_POST["frenchVerb"],
-        "english" => $_POST["frenchVerb"],
+        "english" => $_POST["englishVerb"],
         "preterit" => $_POST["preterit"],
-        "pastParticipate" => $_POST["pastParticipate"]
+        "pastParticipate" => $_POST["pastParticipate"],
+        "bookmarked" => false
     ];
 
     $fileHandler = new FileHandler();

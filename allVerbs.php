@@ -7,6 +7,7 @@ $allVerbs = $fileHandler->getData();
         <table class="table table-hover">
             <thead>
                 <tr>
+                    <th>Favoris</th>
                     <th>Français</th>
                     <th>Anglais</th>
                     <th>Prétérit</th>
@@ -17,11 +18,17 @@ $allVerbs = $fileHandler->getData();
             <tbody>
                 <?php foreach ($allVerbs as $verb) : ?>
                     <tr>
+                        <td>
+                            <?php if ($verb["bookmarked"]) : ?>
+                                <img src="./assets/star.png" width="20px" alt="">
+                            <?php endif ?>
+                        </td>
                         <td><?= $verb["french"] ?></td>
                         <td><?= $verb["english"] ?></td>
                         <td><?= $verb["preterit"] ?></td>
                         <td><?= $verb["pastParticipate"] ?></td>
                         <td><a href="">Modifier</a></td>
+
                     </tr>
                 <?php endforeach ?>
             </tbody>
