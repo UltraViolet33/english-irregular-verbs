@@ -14,10 +14,10 @@ const result = document.querySelector("#result");
 let allVerbs = [];
 let currentVerb = {};
 
-const getAllVerbs = async () => {
-  const response = await fetch("./data/verbs.json");
-  return await response.json();
-};
+// const getAllVerbs = async () => {
+//   const response = await fetch("./data/verbs.json");
+//   return await response.json();
+// };
 
 const setForm = () => {
   englishVerb.value = "";

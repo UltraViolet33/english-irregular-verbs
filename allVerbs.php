@@ -1,6 +1,4 @@
-<?php require_once './inc/header.php';
-$allVerbs = $fileHandler->getData();
-?>
+<?php require_once './inc/header.php' ?>
 <div class="container my-5">
     <div class="row my-5 justify-content-center">
         <h1 class="text-center">Tous les verbes</h1>
@@ -15,24 +13,12 @@ $allVerbs = $fileHandler->getData();
                     <th>Modifier</th>
                 </tr>
             </thead>
-            <tbody>
-                <?php foreach ($allVerbs as $verb) : ?>
-                    <tr>
-                        <td>
-                            <?php if ($verb["bookmarked"]) : ?>
-                                <img src="./assets/star.png" width="20px" alt="">
-                            <?php endif ?>
-                        </td>
-                        <td><?= $verb["french"] ?></td>
-                        <td><?= $verb["english"] ?></td>
-                        <td><?= $verb["preterit"] ?></td>
-                        <td><?= $verb["pastParticipate"] ?></td>
-                        <td><a href="">Modifier</a></td>
+            <tbody id="table">
 
-                    </tr>
-                <?php endforeach ?>
             </tbody>
         </table>
     </div>
 </div>
+<script src="./functions.js"></script>
+<script src="./allVerbs.js"></script>
 <?php require_once './inc/footer.php' ?>

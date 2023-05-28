@@ -26,5 +26,7 @@
         </div>
     </div>
 </div>
+<script src="./functions.js"></script>
+
 <script src="./verbs.js"></script>
 <?php require_once './inc/footer.php' ?>
