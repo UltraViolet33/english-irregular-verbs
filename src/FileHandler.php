@@ -15,6 +15,14 @@ class FileHandler
         fclose($file);
     }
 
+    public function editVerbs(array $verbs)
+    {
+        $file = fopen(self::FILE, "w");
+        $verbStr = json_encode($verbs);
+        fwrite($file, $verbStr);
+        fclose($file);
+    }
+
     public function getData(): array
     {
         $data = file_get_contents(self::FILE);

@@ -34,10 +34,8 @@ const resetTable = verbs => {
     el.addEventListener("click", () => {
       const idVerb = el.getAttribute("id");
       const index = allVerbs.findIndex(verb => verb.id == idVerb);
-      
-      allVerbs[index].star = !allVerbs[index].star; 
-      console.log(allVerbs);
-      resetTable(allVerbs)
+      const verb = allVerbs[index];
+      bookmarkVerb(verb).then(verbs => resetTable(verbs));
     });
   }
 };
