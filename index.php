@@ -4,17 +4,17 @@
         <div class="col-12 my-5">
             <div class="row justify-content-center">
                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="allVerbs" id="btnradio1" autocomplete="off" checked>
-                    <label class="btn btn-outline-primary" for="btnradio1">Tous les verbes</label>
-                    <input type="radio" class="btn-check" name="starVerbs" id="btnradio2" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio2">Verbes favoris</label>
+                    <input type="radio" class="btn-check" name="verbs" id="allVerbs" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="allVerbs">Tous les verbes</label>
+                    <input type="radio" class="btn-check" name="verbs" id="starVerbs" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="starVerbs">Verbes favoris</label>
                 </div>
             </div>
             <div class="row vh-100 align-items-center">
                 <div class="col-2">
                     <label id="frenchVerb" for="frenchVerb" class="form-label"></label>
                 </div>
-                <div class="col-3">
+                <div class="col-2">
                     <input id="englishVerb" type="text" name="englishVerb" class="form-control" placeholder="Verb in english">
                     <p id="englishError"></p>
                 </div>

@@ -1,3 +1,23 @@
+const radioAllVerbs = document.querySelector("#allVerbs");  
+const radioStarVerbs = document.querySelector("#starVerbs");
+
+let allVerbs = [];
+let currentVerb = {};
+
+radioAllVerbs.addEventListener("click", function () {
+  getAllVerbs().then(verbs => {
+    allVerbs = verbs;
+    setForm();
+  });
+});
+
+radioStarVerbs.addEventListener("click", ()=> {
+  getAllBookmarkedVerbs().then(verbs => {
+    allVerbs = verbs;
+    setForm();
+  });
+})
+
 const labelFrenchVerb = document.querySelector("#frenchVerb");
 
 const englishVerb = document.querySelector("#englishVerb");
@@ -10,14 +30,6 @@ const pastParticipateError = document.querySelector("#pastParticipateError");
 
 const btnSubmit = document.querySelector("#submit");
 const result = document.querySelector("#result");
-
-let allVerbs = [];
-let currentVerb = {};
-
-// const getAllVerbs = async () => {
-//   const response = await fetch("./data/verbs.json");
-//   return await response.json();
-// };
 
 const setForm = () => {
   englishVerb.value = "";
@@ -32,10 +44,6 @@ const setForm = () => {
   labelFrenchVerb.textContent = currentVerb.french;
 };
 
-// getAllVerbs().then(verbs => {
-//   allVerbs = verbs;
-//   setForm();
-// });
 
 getAllBookmarkedVerbs().then(verbs => {
   allVerbs = verbs;

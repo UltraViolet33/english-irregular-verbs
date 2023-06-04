@@ -13,15 +13,15 @@
         "english": "awake",
         "preterit": "awoke",
         "pastParticipate": "awoken",
-        "star": true
+        "star": false
     },
     {
         "id": "d7391ff9030c4560b87ce780c41395d3",
         "french": "etre",
         "english": "be",
-        "preterit": "was\/were",
+        "preterit": "was/were",
         "pastParticipate": "been",
-        "star": true
+        "star": false
     },
     {
         "id": "bdb6fb5370934a3d9954650f936b9413",
@@ -147,8 +147,8 @@
         "id": "f2d804bee4d84bf19c023018b42fbe5c",
         "french": "bruler",
         "english": "burn",
-        "preterit": "burnt\/burned",
-        "pastParticipate": "burnt\/burned",
+        "preterit": "burnt/burned",
+        "pastParticipate": "burnt/burned",
         "star": false
     },
     {
@@ -267,8 +267,8 @@
         "id": "bc769a984ccb4f00ba0129899d69a19a",
         "french": "reve",
         "english": "dream",
-        "preterit": "dreamt\/dreamed",
-        "pastParticipate": "dreamt\/dreamed",
+        "preterit": "dreamt/dreamed",
+        "pastParticipate": "dreamt/dreamed",
         "star": false
     },
     {
@@ -515,16 +515,16 @@
         "id": "52400745e61a4b0386921f67a5215a86",
         "french": "maigre",
         "english": "lean",
-        "preterit": "leant\/leaned",
-        "pastParticipate": "leant\/leaned",
+        "preterit": "leant/leaned",
+        "pastParticipate": "leant/leaned",
         "star": false
     },
     {
         "id": "3f35e4fd9786434db211cd3a9e3b4ca1",
         "french": "apprendre",
         "english": "learn",
-        "preterit": "learnt\/learned",
-        "pastParticipate": "learnt\/learned",
+        "preterit": "learnt/learned",
+        "pastParticipate": "learnt/learned",
         "star": false
     },
     {
@@ -563,8 +563,8 @@
         "id": "7e2d858ec4f640609648d671a76205ae",
         "french": "lumiere",
         "english": "light",
-        "preterit": "lit\/lighted",
-        "pastParticipate": "lit\/lighted",
+        "preterit": "lit/lighted",
+        "pastParticipate": "lit/lighted",
         "star": false
     },
     {
@@ -612,7 +612,7 @@
         "french": "tondre",
         "english": "mow",
         "preterit": "mowed",
-        "pastParticipate": "mown\/mowed",
+        "pastParticipate": "mown/mowed",
         "star": false
     },
     {
@@ -692,7 +692,7 @@
         "french": "scie",
         "english": "saw",
         "preterit": "sawed",
-        "pastParticipate": "sawn\/sawed",
+        "pastParticipate": "sawn/sawed",
         "star": false
     },
     {
@@ -740,7 +740,7 @@
         "french": "coudre",
         "english": "sew",
         "preterit": "sewed",
-        "pastParticipate": "sewn\/sewed",
+        "pastParticipate": "sewn/sewed",
         "star": false
     },
     {
@@ -860,7 +860,7 @@
         "french": "truie",
         "english": "sow",
         "preterit": "sowed",
-        "pastParticipate": "sown\/sowed",
+        "pastParticipate": "sown/sowed",
         "star": false
     },
     {
@@ -875,8 +875,8 @@
         "id": "3b42edd057c44012a2eda0d42e563f92",
         "french": "sort",
         "english": "spell",
-        "preterit": "spelt\/spelled",
-        "pastParticipate": "spelt\/spelled",
+        "preterit": "spelt/spelled",
+        "pastParticipate": "spelt/spelled",
         "star": false
     },
     {
@@ -891,8 +891,8 @@
         "id": "dd5d369f84cf4b9fb089d51f82cda136",
         "french": "repandre",
         "english": "spill",
-        "preterit": "spilt\/spilled",
-        "pastParticipate": "spilt\/spilled",
+        "preterit": "spilt/spilled",
+        "pastParticipate": "spilt/spilled",
         "star": false
     },
     {
@@ -980,7 +980,7 @@
         "french": "gonfler",
         "english": "swell",
         "preterit": "swelled",
-        "pastParticipate": "swollen\/swelled",
+        "pastParticipate": "swollen/swelled",
         "star": false
     },
     {
