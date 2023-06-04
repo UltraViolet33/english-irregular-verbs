@@ -1,1 +1,42 @@
-[{"id":"6473835167162","french":"df","english":"df","preterit":"d","pastParticipate":"d","star":true},{"id":"647383580f54b","french":"df","english":"df","preterit":"df","pastParticipate":"df","star":false}]
+[
+    {
+        "id": "6473835167162",
+        "french": "df",
+        "english": "df",
+        "preterit": "d",
+        "pastParticipate": "d",
+        "star": true
+    },
+    {
+        "id": "6473835167162",
+        "french": "djjf",
+        "english": "df",
+        "preterit": "d",
+        "pastParticipate": "d",
+        "star": true
+    },
+    {
+        "id": "6473835167162",
+        "french": "j",
+        "english": "df",
+        "preterit": "d",
+        "pastParticipate": "d",
+        "star": true
+    },
+    {
+        "id": "6473835167162",
+        "french": "gggdf",
+        "english": "df",
+        "preterit": "d",
+        "pastParticipate": "d",
+        "star": true
+    },
+    {
+        "id": "647383580f54b",
+        "french": "dfg",
+        "english": "df",
+        "preterit": "df",
+        "pastParticipate": "df",
+        "star": false
+    }
+]

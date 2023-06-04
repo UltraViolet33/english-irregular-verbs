@@ -32,8 +32,14 @@ const setForm = () => {
   labelFrenchVerb.textContent = currentVerb.french;
 };
 
-getAllVerbs().then(verbs => {
+// getAllVerbs().then(verbs => {
+//   allVerbs = verbs;
+//   setForm();
+// });
+
+getAllBookmarkedVerbs().then(verbs => {
   allVerbs = verbs;
+  console.log(verbs);
   setForm();
 });
 
