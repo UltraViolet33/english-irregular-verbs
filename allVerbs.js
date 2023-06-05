@@ -14,14 +14,15 @@ const displayVerbs = verbs => {
         <td id='${verb.id}' class='star'>
         ${
           verb.star
-            ? "<img src='./assets/star.png' width='20px' >"
-            : "<img src='./assets/empty_star.png' width='20px' >"
+            ? `<img id='img-star-${verb.id}' src='./assets/star.png' width='20px' >`
+            : `<img id='img-star-${verb.id}' src='./assets/empty_star.png' width='20px' >`
         }
         </td>
         <td>${verb.french}</td>
         <td>${verb.english}</td>
         <td>${verb.preterit}</td>
         <td>${verb.pastParticipate}</td>
+        <td style='cursor:pointer'><img src='./assets/crayon.png' ></td>
     </tr>`;
   }
 };
@@ -35,7 +36,17 @@ const resetTable = verbs => {
       const idVerb = el.getAttribute("id");
       const index = allVerbs.findIndex(verb => verb.id == idVerb);
       const verb = allVerbs[index];
-      bookmarkVerb(verb).then(verbs => resetTable(verbs));
+
+      const imgStar = document.querySelector(`#img-star-${verb.id}`);
+
+      const imgAttribute = verb.star
+        ? "./assets/empty_star.png"
+        : "./assets/star.png";
+
+      imgStar.setAttribute("src", imgAttribute);
+
+      allVerbs[index].star = !allVerbs[index].star;
+      bookmarkVerb(verb);
     });
   }
 };
