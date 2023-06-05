@@ -17,3 +17,11 @@ const bookmarkVerb = async verb => {
   });
   return await response.json();
 };
+
+const editVerb = async verb => {
+  const response = await fetch("./editVerb.php", {
+    method: "POST",
+    body: JSON.stringify(verb),
+  });
+  return await response.json();
+};
