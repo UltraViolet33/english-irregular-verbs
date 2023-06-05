@@ -1,4 +1,4 @@
-const radioAllVerbs = document.querySelector("#allVerbs");  
+const radioAllVerbs = document.querySelector("#allVerbs");
 const radioStarVerbs = document.querySelector("#starVerbs");
 
 let allVerbs = [];
@@ -11,12 +11,12 @@ radioAllVerbs.addEventListener("click", function () {
   });
 });
 
-radioStarVerbs.addEventListener("click", ()=> {
+radioStarVerbs.addEventListener("click", () => {
   getAllBookmarkedVerbs().then(verbs => {
     allVerbs = verbs;
     setForm();
   });
-})
+});
 
 const labelFrenchVerb = document.querySelector("#frenchVerb");
 
@@ -36,14 +36,17 @@ const setForm = () => {
   preterit.value = "";
   pastParticipate.value = "";
 
-  englishError.textContent = "";
-  preterit.textContent = "";
-  pastParticipate.textContent = "";
+  englishVerb.classList.remove("is-valid");
+  preterit.classList.remove("is-valid");
+  pastParticipate.classList.remove("is-valid");
+
+  englishVerb.classList.remove("is-invalid");
+  preterit.classList.remove("is-invalid");
+  pastParticipate.classList.remove("is-invalid");
 
   currentVerb = allVerbs[Math.floor(Math.random() * allVerbs.length)];
   labelFrenchVerb.textContent = currentVerb.french;
 };
-
 
 getAllBookmarkedVerbs().then(verbs => {
   allVerbs = verbs;
@@ -64,9 +67,16 @@ btnSubmit.addEventListener("click", () => {
 
   if (checkVerbValues(verb)) {
     result.textContent = "Gagné !";
+    englishVerb.classList.add("is-valid");
+    preterit.classList.add("is-valid");
+    pastParticipate.classList.add("is-valid");
+
     setTimeout(() => {
+      englishVerb.classList.remove("is-valid");
+      preterit.classList.remove("is-valid");
+      pastParticipate.classList.remove("is-valid");
       setForm();
-    }, 5000);
+    }, 1000);
   }
 });
 
@@ -74,17 +84,17 @@ const checkVerbValues = verb => {
   let result = true;
 
   if (verb.english !== currentVerb.english) {
-    englishError.textContent = "Faux !";
+    englishVerb.classList.add("is-invalid");
     result = false;
   }
 
   if (verb.preterit !== currentVerb.preterit) {
-    preteritError.textContent = "Faux !";
+    preterit.classList.add("is-invalid");
     result = false;
   }
 
   if (verb.pastParticipate !== currentVerb.pastParticipate) {
-    pastParticipateError.textContent = "Faux !";
+    pastParticipate.classList.add("is-invalid");
     result = false;
   }
 

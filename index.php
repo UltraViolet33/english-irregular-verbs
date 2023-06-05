@@ -1,6 +1,6 @@
 <?php require_once './inc/header.php' ?>
 <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-12 my-5">
             <div class="row justify-content-center">
                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -10,27 +10,47 @@
                     <label class="btn btn-outline-primary" for="starVerbs">Verbes favoris</label>
                 </div>
             </div>
-            <div class="row vh-100 align-items-center">
-                <div class="col-2">
-                    <label id="frenchVerb" for="frenchVerb" class="form-label"></label>
+        </div>
+        <div class="col-12 my-5">
+            <form action="" class="form-inline">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <label id="frenchVerb" for="frenchVerb" class="form-label"></label>
+                    </div>
+                    <div class="form-group col-2">
+                        <input id="englishVerb" type="text" aria-describedby="validation-english" name="englishVerb" class="form-control" placeholder="Verb in english">
+                        <div class="valid-feedback validation">
+                            Good !
+                        </div>
+                        <div id="validation-english" class="invalid-feedback validation">
+                            False !
+                        </div>
+                    </div>
+                    <div class="col-3 form-group">
+                        <input id="preterit" type="text" aria-describedby="validation-preterit" name="preterit" class="form-control" placeholder="Preterit">
+                        <div class="valid-feedback validation">
+                            Good !
+                        </div>
+                        <div id="validation-preterit" class="invalid-feedback validation">
+                            False !
+                        </div>
+                    </div>
+                    <div class="col-3 form-group">
+                        <input id="pastParticipate" type="text" aria-describedby="validation-pastParticipate" name="pastParticipate" class="form-control" placeholder="Past participle">
+                        <div class="valid-feedback validation">
+                            Good !
+                        </div>
+                        <div id="validation-pastParticipate" class="invalid-feedback validation">
+                            False !
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <button class="btn btn-primary" id="submit" type="button">Valider</button>
+                    </div>
+
+                    <p id="result"></p>
                 </div>
-                <div class="col-2">
-                    <input id="englishVerb" type="text" name="englishVerb" class="form-control" placeholder="Verb in english">
-                    <p id="englishError"></p>
-                </div>
-                <div class="col-3">
-                    <input id="preterit" type="text" name="preterit" class="form-control" placeholder="Preterit">
-                    <p id="preteritError"></p>
-                </div>
-                <div class="col-3">
-                    <input id="pastParticipate" type="text" name="pastParticipate" class="form-control" placeholder="Past participle">
-                    <p id="pastParticipateError"></p>
-                </div>
-                <div class="col-1">
-                    <button class="btn btn-primary" id="submit">Valider</button>
-                </div>
-                <p id="result"></p>
-            </div>
+            </form>
         </div>
     </div>
 </div>
