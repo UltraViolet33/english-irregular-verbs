@@ -21,11 +21,11 @@ const resetTable = verbs => {
 const editForm = verb => {
   return `<tr>
   <td></td>
-  <td><input id='input-french-${verb.id}' placeholder='french' value='${verb.french}' ></td>
-  <td><input id='input-english-${verb.id}' placeholder='english' value='${verb.english}' ></td>
-  <td><input id='input-preterit-${verb.id}' placeholder='preterit' value='${verb.preterit}' ></td>
-  <td><input id='input-pastParticipate-${verb.id}' placeholder='pastParticipate' value='${verb.pastParticipate}' ></td>
-  <td><button id='edit-btn-${verb.id}'>Valider</button></td>
+  <td><input id='input-french-${verb.id}' placeholder='french' value='${verb.french}' class='form-control' ></td>
+  <td><input id='input-english-${verb.id}' placeholder='english' value='${verb.english}' class='form-control' ></td>
+  <td><input id='input-preterit-${verb.id}' placeholder='preterit' value='${verb.preterit}' class='form-control' ></td>
+  <td><input id='input-pastParticipate-${verb.id}' placeholder='pastParticipate' value='${verb.pastParticipate}' class='form-control' ></td>
+  <td><button class='btn btn-success' id='edit-btn-${verb.id}'>Valider</button></td>
   </tr>`;
 };
 
