@@ -18,30 +18,30 @@
                         <label id="frenchVerb" for="frenchVerb" class="form-label"></label>
                     </div>
                     <div class="form-group col-10 col-md-2  my-3">
-                        <input id="englishVerb" type="text" aria-describedby="validation-english" name="englishVerb" class="form-control" placeholder="Verb in english">
+                        <input id="englishVerb" type="text" aria-describedby="validation-english" name="englishVerb" class="form-control" placeholder="Verbe en anglais">
                         <div class="valid-feedback validation">
-                            Good !
+                            C'est juste !
                         </div>
                         <div id="validation-english" class="invalid-feedback validation">
-                            False !
+                            C'est faux !
                         </div>
                     </div>
                     <div class="form-group col-10 col-md-3  my-3">
                         <input id="preterit" type="text" aria-describedby="validation-preterit" name="preterit" class="form-control" placeholder="Preterit">
                         <div class="valid-feedback validation">
-                            Good !
+                            C'est juste !
                         </div>
                         <div id="validation-preterit" class="invalid-feedback validation">
-                            False !
+                            C'est faux !
                         </div>
                     </div>
                     <div class="form-group col-md-3 col-10 my-3">
-                        <input id="pastParticipate" type="text" aria-describedby="validation-pastParticipate" name="pastParticipate" class="form-control" placeholder="Past participle">
+                        <input id="pastParticipate" type="text" aria-describedby="validation-pastParticipate" name="pastParticipate" class="form-control" placeholder="Participe passé">
                         <div class="valid-feedback validation">
-                            Good !
+                            C'est juste !
                         </div>
                         <div id="validation-pastParticipate" class="invalid-feedback validation">
-                            False !
+                            C'est faux !
                         </div>
                     </div>
                     <div class="col-md-1 col-10 my-3">
