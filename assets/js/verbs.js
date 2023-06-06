@@ -59,6 +59,8 @@ btnSubmit.addEventListener("click", () => {
   const preteritValue = preterit.value;
   const pastParticipateValue = pastParticipate.value;
 
+  resetValidationClasses();
+
   const verb = {
     english: englishVerbValue,
     preterit: preteritValue,
@@ -67,16 +69,13 @@ btnSubmit.addEventListener("click", () => {
 
   if (checkVerbValues(verb)) {
     result.textContent = "Gagné !";
-    englishVerb.classList.add("is-valid");
-    preterit.classList.add("is-valid");
-    pastParticipate.classList.add("is-valid");
 
     setTimeout(() => {
-      englishVerb.classList.remove("is-valid");
-      preterit.classList.remove("is-valid");
-      pastParticipate.classList.remove("is-valid");
+      result.textContent = "";
+
+      resetValidationClasses();
       setForm();
-    }, 1000);
+    }, 2000);
   }
 });
 
@@ -86,17 +85,33 @@ const checkVerbValues = verb => {
   if (verb.english !== currentVerb.english) {
     englishVerb.classList.add("is-invalid");
     result = false;
+  } else {
+    englishVerb.classList.add("is-valid");
   }
 
   if (verb.preterit !== currentVerb.preterit) {
     preterit.classList.add("is-invalid");
     result = false;
+  } else {
+    preterit.classList.add("is-valid");
   }
 
   if (verb.pastParticipate !== currentVerb.pastParticipate) {
     pastParticipate.classList.add("is-invalid");
     result = false;
+  } else {
+    pastParticipate.classList.add("is-valid");
   }
 
   return result;
+};
+
+const resetValidationClasses = () => {
+  englishVerb.classList.remove("is-valid");
+  preterit.classList.remove("is-valid");
+  pastParticipate.classList.remove("is-valid");
+
+  englishVerb.classList.remove("is-invalid");
+  preterit.classList.remove("is-invalid");
+  pastParticipate.classList.remove("is-invalid");
 };

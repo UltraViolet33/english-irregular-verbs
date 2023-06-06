@@ -11,7 +11,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 my-5">ddd
+        <div class="col-12 my-5">
             <form action="" class="form-inline">
                 <div class="row align-items-center">
                     <div class="col-2">
@@ -47,10 +47,11 @@
                     <div class="col-1">
                         <button class="btn btn-primary" id="submit" type="button">Valider</button>
                     </div>
-
-                    <p id="result"></p>
                 </div>
             </form>
+        </div>
+        <div class="col-12 my-5">
+            <p id="result" align="center"></p>
         </div>
     </div>
 </div>
