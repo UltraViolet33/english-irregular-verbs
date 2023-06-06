@@ -14,10 +14,10 @@
         <div class="col-12 my-5">
             <form action="" class="form-inline">
                 <div class="row align-items-center">
-                    <div class="col-2">
+                    <div class="col-md-2 col-10 my-3">
                         <label id="frenchVerb" for="frenchVerb" class="form-label"></label>
                     </div>
-                    <div class="form-group col-2">
+                    <div class="form-group col-10 col-md-2  my-3">
                         <input id="englishVerb" type="text" aria-describedby="validation-english" name="englishVerb" class="form-control" placeholder="Verb in english">
                         <div class="valid-feedback validation">
                             Good !
@@ -26,7 +26,7 @@
                             False !
                         </div>
                     </div>
-                    <div class="col-3 form-group">
+                    <div class="form-group col-10 col-md-3  my-3">
                         <input id="preterit" type="text" aria-describedby="validation-preterit" name="preterit" class="form-control" placeholder="Preterit">
                         <div class="valid-feedback validation">
                             Good !
@@ -35,7 +35,7 @@
                             False !
                         </div>
                     </div>
-                    <div class="col-3 form-group">
+                    <div class="form-group col-md-3 col-10 my-3">
                         <input id="pastParticipate" type="text" aria-describedby="validation-pastParticipate" name="pastParticipate" class="form-control" placeholder="Past participle">
                         <div class="valid-feedback validation">
                             Good !
@@ -44,7 +44,7 @@
                             False !
                         </div>
                     </div>
-                    <div class="col-1">
+                    <div class="col-md-1 col-10 my-3">
                         <button class="btn btn-primary" id="submit" type="button">Valider</button>
                     </div>
                 </div>

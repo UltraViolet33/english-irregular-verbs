@@ -24,9 +24,6 @@ $fileHandler = new FileHandler();
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                            <a class="nav-link" href="./addVerb.php">Add verb</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="./allVerbs.php">See all verbs</a>
                     </li>
                 </ul>

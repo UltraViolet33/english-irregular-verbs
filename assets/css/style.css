@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
 .form-group {
   position: relative;
 }
@@ -5,7 +11,7 @@
 .validation {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 20px;
   width: 100%;
 }
 
@@ -36,5 +42,13 @@
 
   50% {
     font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
   }
 }
