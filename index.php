@@ -11,7 +11,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 my-5">
+        <div class="col-12 my-5">ddd
             <form action="" class="form-inline">
                 <div class="row align-items-center">
                     <div class="col-2">
@@ -54,6 +54,6 @@
         </div>
     </div>
 </div>
-<script src="./functions.js"></script>
-<script src="./verbs.js"></script>
+<script src="./assets/js/functions.js"></script>
+<script src="./assets/js/verbs.js"></script>
 <?php require_once './inc/footer.php' ?>

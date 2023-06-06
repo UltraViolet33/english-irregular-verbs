@@ -19,6 +19,6 @@
         </table>
     </div>
 </div>
-<script src="./functions.js"></script>
-<script src="./allVerbs.js"></script>
+<script src="./assets/js/functions.js"></script>
+<script src="./assets/js/allVerbs.js"></script>
 <?php require_once './inc/footer.php' ?>
