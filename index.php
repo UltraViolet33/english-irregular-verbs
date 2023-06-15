@@ -1,7 +1,7 @@
 <?php require_once './inc/header.php' ?>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-12 my-5">
+        <div class="col-12 my-3 my-md-5">
             <div class="row justify-content-center">
                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                     <input type="radio" class="btn-check" name="verbs" id="allVerbs" autocomplete="off">
@@ -11,13 +11,13 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 my-5">
+        <div class="col-12 my-3 my-md-5">
             <form action="" class="form-inline">
-                <div class="row align-items-center">
+                <div class="row justify-content-center">
                     <div class="col-md-2 col-10 my-3">
                         <label id="frenchVerb" for="frenchVerb" class="form-label"></label>
                     </div>
-                    <div class="form-group col-10 col-md-2  my-3">
+                    <div class="form-group col-10 col-md-3  my-3">
                         <input id="englishVerb" type="text" aria-describedby="validation-english" name="englishVerb" class="form-control" placeholder="Verbe en anglais">
                         <div class="valid-feedback validation">
                             C'est juste !

@@ -55,9 +55,9 @@ getAllBookmarkedVerbs().then(verbs => {
 });
 
 btnSubmit.addEventListener("click", () => {
-  const englishVerbValue = englishVerb.value;
-  const preteritValue = preterit.value;
-  const pastParticipateValue = pastParticipate.value;
+  const englishVerbValue = englishVerb.value.toLowerCase();
+  const preteritValue = preterit.value.toLowerCase();
+  const pastParticipateValue = pastParticipate.value.toLowerCase();
 
   resetValidationClasses();
 
@@ -75,7 +75,7 @@ btnSubmit.addEventListener("click", () => {
 
       resetValidationClasses();
       setForm();
-    }, 4000);
+    }, 500);
   }
 });
 

@@ -7,9 +7,7 @@ file = open("./verbs.json")
 
 data = json.load(file)
 
-
 allVerbs = []
-
 
 for verb in data["verbs"]:
 
@@ -27,7 +25,6 @@ for verb in data["verbs"]:
     }
 
     allVerbs.append(new_verb)
-
 
 
 json_object = json.dumps(allVerbs, indent=4)
