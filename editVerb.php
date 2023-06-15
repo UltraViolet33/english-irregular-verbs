@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     foreach ($allVerbs as $index => $verb) {
         if ($verb["id"] === $data["id"]) {
-            
+
             $allVerbs[$index] = $data;
         }
     }

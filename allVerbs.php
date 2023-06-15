@@ -3,7 +3,6 @@
     <div class="row my-5 justify-content-center">
         <h1 class="text-center">Tous les verbes</h1>
         <div class="col-10 col-md-12">
-
             <table class="table table-responsive table-hover">
                 <thead>
                     <tr>
@@ -16,7 +15,6 @@
                     </tr>
                 </thead>
                 <tbody id="table">
-
                 </tbody>
             </table>
         </div>
