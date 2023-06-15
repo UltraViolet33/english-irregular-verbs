@@ -75,7 +75,7 @@ btnSubmit.addEventListener("click", () => {
 
       resetValidationClasses();
       setForm();
-    }, 2000);
+    }, 4000);
   }
 });
 
